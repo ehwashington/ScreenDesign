@@ -1,0 +1,48 @@
+﻿<%@ Register assembly="MTrE" namespace="MTrE" tagprefix="base" %>
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<base:TabContainer runat="server" TabMargin="0px" TabOffset="0px" TabContentCssClass="multipageMTrE"
+TabWidthScheme="PerCharacter" TabWidthPadding="15px" TabWidthPixelsPerChar="8px" TabLabelUnselectedColor="#e6e6e6" 
+TabLabelSelectedStyle="Color: #1e376d;" TabLabelUnselectedStyle="Color: #4d4d4d;" TabLabelSelectedColor="#97b4de"
+TabLabelHoverStyle="Color: #242037;" TabType="SuperscriptedWithHotkey"></base:TabContainer>
+
+<base:TabContainer runat="server" SkinID="TabDark" TabMargin="0px" TabOffset="0px" TabContentCssClass="multipage"  
+TabWidthScheme="PerCharacter" TabWidthPadding="15px" TabWidthPixelsPerChar="8px" TabLabelUnselectedColor="#e6e6e6" 
+TabLabelSelectedStyle="Color: #1e376d;" TabLabelUnselectedStyle="Color: #4d4d4d;" TabLabelSelectedColor="#97b4de"
+TabLabelHoverStyle="Color: #242037;" TabType="SuperscriptedWithHotkey"></base:TabContainer>
+
+<base:TabContainer runat="server" SkinID="TabBlue" TabMargin="0px" TabOffset="0px" TabContentCssClass="multipagealt"  
+TabWidthScheme="PerCharacter" TabWidthPadding="15px" TabWidthPixelsPerChar="8px" TabLabelUnselectedColor="#e6e6e6" 
+TabLabelSelectedStyle="Color: #1e376d;" TabLabelUnselectedStyle="Color: #4d4d4d;" TabLabelSelectedColor="#97b4de"
+TabLabelHoverStyle="Color: #242037;" TabType="SuperscriptedWithHotkey"></base:TabContainer>
+
+<base:TabContainer runat="server" SkinID="TabSearch" TabMargin="0px" TabOffset="0px" TabContentCssClass="multipagesearch"  
+TabWidthScheme="PerCharacter" TabWidthPadding="15px" TabWidthPixelsPerChar="8px" TabAlignment="Left"
+TabMotiff="TabSearch" TabLabelSelectedStyle="Color: #1e376d; text-decoration: none"  TabLabelUnselectedColor="#e6e6e6" 
+TabLabelUnselectedStyle="Color: #4d4d4d; text-decoration: underline" TabLabelSelectedColor="#97b4de"
+TabLabelHoverStyle="Color: #242037;" TabStripPlacement="Left" TabThickness="80px" TabWidthMaxSize="35px"></base:TabContainer>
+
+<base:TabContainer runat="server" SkinID="TabInnerSearch" TabMargin="0px" TabOffset="0px" TabContentCssClass="multipageMTrE"
+TabWidthScheme="PerCharacter" TabWidthPadding="15px" TabWidthPixelsPerChar="8px" TabLabelUnselectedColor="#CDCDCD" 
+TabAlignment="Left" TabStripPlacement="Left" TabThickness="40px" TabWidthMaxSize="40px"
+TabLabelSelectedStyle="Color: #1e376d;" TabLabelUnselectedStyle="Color: #4d4d4d;" TabLabelSelectedColor="#e6e6e6"
+TabLabelHoverStyle="Color: #242037;" TabType="SuperscriptedWithHotkey"></base:TabContainer>
+
+<base:TabContainer runat="server" SkinID="TabInnerTopSearch" TabMargin="0px" TabOffset="0px" TabContentCssClass="multipageMTrE"
+TabWidthScheme="PerCharacter" TabWidthPadding="15px" TabWidthPixelsPerChar="8px" TabLabelUnselectedColor="#CDCDCD" 
+TabLabelSelectedStyle="Color: #4d4d4d;" TabLabelUnselectedStyle="Color: #4d4d4d;" TabLabelSelectedColor="#e6e6e6"
+TabLabelHoverStyle="Color: #242037;" TabType="SuperscriptedWithHotkey" TabThickness="25px"></base:TabContainer>

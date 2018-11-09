@@ -1,0 +1,12 @@
+var zBase = 150;
+var webPath="";
+var scriptPath="../mccm/Scripts/";
+var imagePath="../mccm/images/";
+var contentScript="../mccm/Scripts/mn_menu.js";
+var styleScript="";
+var instanceScript="";
+var NN405Page="";
+var nonMenuPage="";
+var showToolTip=1;
+var showMessage=0;
+var menuTimer=50;

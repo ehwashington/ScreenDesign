@@ -1,0 +1,50 @@
+﻿<%@ Register TagPrefix="base" Namespace="MTrE" Assembly="MTrE" %>
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+
+NOT YET SUPPORTED IN THIS SKIN:
+-------------------------------
+<base:BaseCheckList runat="server" CssClass="inputfield"></base:BaseCheckList>
+
+<base:BasePrompt runat="server" Font-Bold="true" Font-Names="Verdana,Arial,Helvetica,sans-serif" Font-Size="12px" ForeColor="dimgray" style="text-align: right; padding-right: 5px"></base:BasePrompt>
+
+<base:BaseCheckBox runat="server" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana,Arial,Helvetica,sans-serif" Font-Size="11px"></base:BaseCheckBox>
+
+<base:BaseRadioButton runat="server" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana,Arial,Helvetica,sans-serif" Font-Size="11px"></base:BaseRadioButton>
+
+--%>
+
+<base:BaseBoxedLabel runat="server" ForeColor="#4d4d4d" BorderColor="#4d4d4d" BorderStyle="Solid" BorderWidth="1px" Font-Names="Arial,'Helvetica Neue',Helvetica,sans-serif;" Font-Size="12px" style="padding-left: 2px; padding-right: 2px"></base:BaseBoxedLabel>
+
+<base:BaseCombo runat="server" CssClass="cbotext" SelectorCssClass="cboselector" ResultsCssClass="cbolist" MoreCssClass="cbostatus"></base:BaseCombo>
+
+<base:BaseDate runat="server" CssClass="inputfield"></base:BaseDate>
+
+<base:BaseListBox runat="server" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" Font-Names="Arial,'Helvetica Neue',Helvetica,sans-serif;" Font-Size="11px"></base:BaseListBox>
+
+<base:BasePassword runat="server" CssClass="inputfield"></base:BasePassword>
+
+<base:BaseRichTextBox runat="server" CssClass="richtextbox"></base:BaseRichTextBox>
+
+<base:BaseTextBox runat="server" CssClass="inputfield"></base:BaseTextBox>
+
+<base:BaseTextBox SkinID="ReadOnly" runat="server" CssClass="readonlyfield"></base:BaseTextBox>
+
+<base:BaseTime runat="server" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" Font-Names="Arial,'Helvetica Neue',Helvetica,sans-serif;" Font-Size="11px"></base:BaseTime>
+
+<base:BaseMenu runat="server" MenuCssStyleSheet="BaseMenu.css" MenuOpenButtonText="Menu" MenuExpandBelowImageURL="Images/tagDH.gif" MenuExpandRightImageURL="Images/tagRH.gif" ServerAssembly="MCCMTrE" ServerClass="Menuing" ServerMethod="GetMenuContents"></base:BaseMenu>
+
+<asp:datagrid runat="server" CssClass="navgrid"></asp:datagrid>

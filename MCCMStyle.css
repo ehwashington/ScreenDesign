@@ -1,0 +1,1365 @@
+BODY
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: bold;
+	LETTER-SPACING: normal;
+	TEXT-TRANSFORM: none;
+	WORD-SPACING: normal;
+}
+
+.Wait
+{
+	background-color: WhiteSmoke;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	color: #070707;
+	border: solid 2px gray;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 80px;
+	padding-right: 40px;
+	background-position: 25px 9px;
+	background-image: url('../MCCM/Images/pdf_loading.gif');
+	background-repeat: no-repeat;
+}
+
+.touchsize
+{
+	zoom: 1.25;
+	position: relative;
+	margin: 12px;
+}
+.stdtaskiframebody
+{
+	background:none
+}
+SELECT {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	Text-Align: left;
+}
+LABEL {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	font-weight: bold;
+	color: #4d4d4d;
+}
+INPUT {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	Text-Align: left;
+	}
+TEXTAREA {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	Text-Align: left;
+	OVERFLOW: hidden;
+}
+
+A:link { COLOR: White }
+
+A:visited { COLOR: White }
+
+A:hover { COLOR: Aqua }
+
+.popupBody
+{
+	BACKGROUND-COLOR: #e6e6e6;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	LETTER-SPACING: normal;
+	TEXT-TRANSFORM: none;
+	WORD-SPACING: normal;
+	color: Black;
+}
+
+
+.popuphdr
+{
+	border: solid 1px black;
+	background-color: #cdcdcd;
+}
+
+.inputField {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	background-color: White;
+    border: 1px solid #999999;
+	}
+
+.inputFieldDim {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	background-color: silver;
+    border: 1px solid #999999;
+	}
+
+.displayField
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	background-color: #DDEAFF;
+	border: 1px solid silver;
+}
+.webkit .displayfield
+{
+	height: 12px
+}
+
+.displayDetails
+{
+	BORDER: White solid 1px;
+	Padding: 5px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	COLOR: black;
+	background-color: LightGrey;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	}
+
+.updatedBy
+{
+	color: #363255;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: normal;
+	background-color: transparent;
+	border: None;
+}
+
+.updatedByBody
+{
+	color: #363255;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background-color: transparent;
+	border: None;
+	text-align: Right;
+}
+
+.codeTable
+{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-weight: bold;
+	color: #1e376d;
+	font-size: 12px;
+}
+
+.codeTablePrompt
+{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	Z-INDEX: 105;
+	color: #4d4d4d;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.dropDown {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 9px;
+	Text-Align: left;
+	border-style:inset;
+	border-width: thin;
+	}
+
+.linkDark
+{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	color: #1e376d;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+a.linkDark:link
+{
+	color: #1e376d;
+}
+a.linkDark:visited
+{
+	color: #1e376d;
+}
+a.linkDark:hover
+{
+	font-weight: bold;
+	color: #1e376d;
+}
+	/* The following works for BaseLinks ('cause they're wrapped in a span) */
+.linkDark a
+{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	color: #1e376d;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.linkDark a:link
+{
+	color: #1e376d;
+}
+.linkDark a.:visited
+{
+	color: #1e376d;
+}
+.linkDark a.:hover
+{
+	font-weight: bold;
+	color: #1e376d;
+}
+
+.cboText
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	Text-Align: left;
+	border:solid 1px #CDCDCD;
+}
+.webkit .cboText
+{
+	height: 12px
+}
+
+.cboSelector
+{
+	height: 18px;
+	width: 16px;
+	border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+	border-left: none;
+	border-right: solid 1px #999999;
+	padding-left: 2px;
+}
+.cboSelector  { padding-left: 1px\9; width: 18px\9; }	/* IE6, IE7, IE8, but also IE9 in some cases :( */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)	/* IE 10+ */
+{
+     .cboSelector  { height: 18px; width: 16px; padding-left: 2px }
+}
+
+
+.pad .cboSelector
+{
+	padding-right: 3px;
+	padding-left: 2px;
+	padding-bottom: 1px;
+}
+
+.webkit .cboSelector
+{
+	height: 11px;
+	width: 15px
+}
+
+.cboSelectornonudge
+{
+	height: 18px;
+	width: 15px;
+	border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+	border-left: none;
+	border-right: solid 1px #999999;
+}
+
+.cboList
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10px;
+	color: Black;
+	Text-Align: left;
+	border: black;
+	background-color: white;
+	cursor: pointer;
+}
+.cboStatus
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 9px;
+	font-weight: normal;
+	Text-Align: left;
+	border-style:none;
+	background-color: #CDCDCD;
+	color: Maroon;
+	padding: 2px;
+}
+.lboList {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 9px;
+	Text-Align: left;
+	border-style:solid;
+	border-width:medium;
+	background-color: #FFFFFF;
+	}
+
+.questionlabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: 500;
+	Text-Align: left;
+	color: Black;
+	}
+.questionheader {
+	Text-Align: left;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	COLOR: black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	}
+.label {
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	color: #4D4D4D;
+	}
+.labelMTrE
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color: #4D4D4D;
+}
+.fromthroughlabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	color: Lemonchiffon;
+	}
+
+.popuplabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color: #4d4d4d;
+	}
+
+.explabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color: DarkSlateGray;
+	}
+
+.searchlabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color: #4d4d4d;
+	}
+
+.searchlabelLight {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color: Lemonchiffon;
+	}
+
+.searchlabeldim {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: right;
+	padding-bottom: 0px;
+	vertical-align: baseline;
+	color: Black;
+	}
+
+ .divPopup
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	COLOR: Black;
+	BACKGROUND-COLOR: LIGHTGREY;
+	Padding: 5px;
+	BORDER: black 1px solid;
+}
+  .popinput {
+	border: 1px solid dimgray;
+	font-size: 11px;
+	background-color: WhiteSmoke;
+}
+
+.webkit .popinput
+{
+	height: 11px
+}
+
+  .poplabel {
+	text-align: right;
+	color: #4d4d4d;
+	font-weight: bold;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 12px;
+	padding-right: 5px;
+}
+  .radiotext {
+	text-align: left;
+	color: black;
+	font-weight: bold;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 10px;
+}
+
+  .radiotextalt {
+	text-align: left;
+	color: white;
+	font-weight: normal;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 11px;
+}
+.navlabel {
+	color: black;
+	background-color: silver;
+	border-style: none;
+	Text-Align: left;
+	font-size: 11px;
+	}
+
+.navtext {
+	border-style: none;
+	color: black;
+	background-color: WhiteSmoke;
+	Text-Align: right;
+
+	}
+
+.navtable {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: normal;
+	color: black;
+	background-color: silver;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+	vertical-align: middle;
+	}
+
+.pad .navimage
+{
+	zoom: 1.3
+}
+
+.tablelabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color:  #1e376d;
+	}
+
+.tablelabelLeft {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: left;
+	color:  #1e376d;
+	}
+
+.divHead
+{
+	background-color: #cdcdcd;
+	border-color: black;
+	color: #4d4d4d;
+	border: solid;
+	border-width: 1pt;
+}
+
+.divHeadData
+{
+	color: #1e376d;
+	background-color: transparent;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+	Text-Align: Left;
+	border: none;
+}
+
+.divHeadLabel {
+	color: #4D4D4D;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+	Text-Align: Right;
+	}
+
+.divHeadLink
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	Text-Align: Left;
+}
+a.divheadlink:link
+{
+	color: #0040ff;
+}
+
+a.divheadlink:visited
+{
+	color: #0040ff;
+}
+a.divHeadLink:hover
+{
+	color: #242037;
+	FONT-WEIGHT: bold;
+}
+
+.divHeadLink_YellowBack
+{
+	color: #4d4d4d;
+	background-color: transparent;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: bold;
+	Text-Align: Left;
+	border: none;
+}
+a.divheadlink_YellowBack:link
+{
+	color: #0040ff;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: bold;
+}
+
+a.divheadlink_YellowBack:visited
+{
+	color: #0040ff;
+	FONT-SIZE: 10pt;
+}
+a.divHeadLink_YellowBack:hover
+{
+	color: #242037;
+	FONT-WEIGHT: bold;
+}
+
+.divBody
+{
+	Color: Lemonchiffon;
+	border-color: Dimgray;
+	background-color: Dimgray;
+	BORDER: solid;
+	border-width: 1px;
+}
+
+.divInstruction
+{
+	FONT-FAMILY:  Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	font-weight: 500;
+	COLOR: Black;
+	BACKGROUND-COLOR: CornflowerBlue;
+	Padding: 10px;
+	BORDER: black 1px solid;
+}
+.divInstructionIndicators
+{
+	FONT-FAMILY:  Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	font-weight: 500;
+	COLOR: Black;
+	BACKGROUND-COLOR: Cornsilk;
+	Padding: 10px;
+	BORDER: black 1px solid;
+}
+.divSearch
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	COLOR: Black;
+	BACKGROUND-COLOR: #CDCDCD;
+	Padding: 5px;
+	BORDER: black 1px solid;
+}
+
+.divMinor
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	COLOR: Black;
+	BACKGROUND-COLOR: Silver;
+	Padding: 5px;
+	BORDER: Black 1px solid;
+}
+.divMinorBorder
+{
+    BORDER: #c0c0c0 1px solid;
+}
+.divMinorNoPad
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	COLOR: Black;
+	BACKGROUND-COLOR: Silver;
+}
+.divBodyAlt
+{
+	Color: Black;
+	border-color: Dimgray;
+	background-color: Silver;
+	BORDER: solid;
+	border-width: 1px;
+}
+
+.multipage
+{
+	color: #4D4D4D;
+	background-color: #97B4DE;
+	BORDER: 0px solid #000000;
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 20px;
+	PADDING-TOP: 5px;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+}
+.multipagealt
+{
+	Color: #4D4D4D;
+	background-color: #97B4DE;
+	BORDER: solid 0px #000000;
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 20px;
+	PADDING-TOP: 5px;
+}
+.multipagesearch
+{
+	Color: #4D4D4D;
+	border-color: #97b4de;
+	background-color: #97b4de;
+	BORDER:  none;
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 20px;
+	PADDING-TOP: 5px;
+}
+
+.dataRectangle
+{
+BORDER: silver 1px solid;
+PADDING-RIGHT: 5px;
+PADDING-LEFT: 5px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+BACKGROUND-COLOR: Gray;
+}
+
+.dataRectangleAlt
+{
+BORDER: gray 1px solid;
+PADDING-RIGHT: 5px;
+PADDING-LEFT: 5px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+BACKGROUND-COLOR: DarkGray;
+}
+
+.popupdataRectangle
+{
+BORDER: silver 1px solid;
+PADDING-RIGHT: 0px;
+PADDING-LEFT: 0px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+BACKGROUND-COLOR: LIGHTSTEELBLUE;
+}
+
+.popupdataRectangleCompressed
+{
+BORDER: silver 1px solid;
+PADDING-RIGHT: 0px;
+PADDING-LEFT: 0px;
+PADDING-BOTTOM: 1px;
+PADDING-TOP: 1px;
+BACKGROUND-COLOR: LIGHTSTEELBLUE;
+}
+
+.toolbar
+{
+BORDER: #C0C0C0 1px solid;
+PADDING-RIGHT: 5px;
+PADDING-LEFT: 5px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+BACKGROUND-COLOR: #97B4DE;
+}
+.toolbar td
+{
+    border: none;
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+}
+.toolbar .savebttn
+{
+	border-style:solid;
+	border-width: 2px;
+	border-color: crimson;
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+}
+.boxShadow
+{
+	-moz-box-shadow: 3px 3px 10px 0px #DDDDDD;
+	-webkit-box-shadow: 3px 3px 10px 0px #DDDDDD;
+	box-shadow: 3px 3px 10px 0px #DDDDDD;
+	behavior: url(Scripts/PIE.htc);
+}
+
+.navToolbar
+{
+	border: 1px solid #c0c0c0;
+}
+span.baseToolbar table
+{
+	border-collapse: collapse;
+	border: 1px solid #c0c0c0;
+	background-image: url(Images/wiz_bkgrnd.gif)
+}
+span.baseToolbar td
+{
+	border: 0;
+}
+
+.raisedbttn
+{
+    border: none;
+}
+.savebttn
+{
+	border-style:solid;
+	border-width: 2px;
+	border-color: crimson;
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+}
+.toolbarbttn
+{
+	border-style:solid;
+	border-width: 1px;
+	border-color: black;
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+}
+.errorBox
+{
+	background-color: Gainsboro;
+	border-color: Firebrick;
+	FONT-FAMILY:  Arial,"Helvetica Neue",Helvetica,sans-serif;
+	border: solid;
+	border-width: 1pt;
+	font-size: 8pt;
+	color: Firebrick;
+}
+.ext
+{
+	color: #1e376d;
+	BACKGROUND-COLOR: transparent;
+	text-decoration: none;
+	TEXT-ALIGN: left;
+	BORDER-BOTTOM-STYLE: none;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE:10pt;
+	FONT-WEIGHT: bold;
+}
+a.ext:link
+{
+	color: #1e376d;
+}
+a.ext:visited
+{
+	color: #1e376d;
+}
+a.ext:hover
+{
+	color: #242037;
+}
+
+.greyBackground {
+   background-color: #E6E6E6;
+}
+
+.xtf
+{
+	color: White;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: #1E376D;
+}
+
+.xth
+{
+	color: White;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #1E376D;
+}
+
+.xth a:link
+{
+	color: #ffffff;
+}
+.xth a:visited
+{
+	color: #ffffff;
+}
+.xth a:hover
+{
+	color: #DDEAFF;
+}
+.xtd
+{
+	color: Black;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background-color: #DDEAFF;
+}
+
+.xtd a:link
+{
+	color:  #0040ff;
+}
+.xtd a:visited
+{
+	color:  #0040ff;
+}
+.xtd a:hover
+{
+	color:  #242037;
+}
+
+.xtdalt
+{
+	color: Black;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	background-color: #F2F2F2;
+}
+
+.xtdalt a:link
+{
+	color: #0040ff;
+}
+.xtdalt a:visited
+{
+	color: #0040ff;
+}
+.xtdalt a:hover
+{
+	color:  #242037;
+}
+
+.xthfixed
+{
+		color: White;
+		FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+		FONT-SIZE: 12px;
+		FONT-WEIGHT: bold;
+		BACKGROUND-COLOR: #1E376D;
+		position: relative;
+		top:expression(this.offsetParent.scrollTop - 2);
+}
+.xthfixed a:link
+{
+	color: white;
+}
+.xthfixed a:visited
+{
+	color: white;
+}
+.xthfixed a:hover
+{
+	color: white;
+
+}
+.xthmtabfixed
+{
+		color: White;
+		FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+		FONT-SIZE: 12px;
+		FONT-WEIGHT: bold;
+		BACKGROUND-COLOR: SteelBlue;
+		position: relative;
+		top:expression(this.offsetParent.scrollTop - 2);
+}
+.xthmtabfixed a:link
+{
+	color: white;
+}
+.xthmtabfixed a:visited
+{
+	color: white;
+}
+.xthmtabfixed a:hover
+{
+	color: white;
+
+}
+
+.xtd2
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: LIGHTSKYBLUE;
+}
+
+.xtd2 a:link
+{
+	color: #0040ff;
+}
+.xtd2 a:visited
+{
+	color: #0040ff;
+}
+.xtd2 a:hover
+{
+	color: #242037;
+}
+
+.xtdalt2
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: LIGHTGOLDENRODYELLOW;
+}
+
+.xtdalt2 a:link
+{
+	color: #0040ff;
+}
+.xtdalt2 a:visited
+{
+	color: #0040ff;
+}
+.xtdalt2 a:hover
+{
+	color: #242037;
+}
+
+.BaseGridBorder table
+{
+    border: 1px;
+    border-style: solid;
+    border-color: darkgray;
+}
+
+.BaseGridBorder table table
+{
+    border: none;
+}
+
+.rptrHead
+{
+	color: White;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: #1e376d;
+}
+
+.rptrData
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: #ddeaff;
+}
+a.rptrData:link
+{
+	color: #0040ff;
+}
+a.rptrData:visited
+{
+	color: #0040ff;
+}
+a.rptrData:hover
+{
+	color: #242037;
+}
+
+.rptrAlt
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: #f2f2f2;
+}
+a.rptrAlt:link
+{
+	color: #0040ff;
+}
+a.rptrAlt:visited
+{
+	color: #0040ff;
+}
+a.rptrAlt:hover
+{
+	color: #242037;
+}
+
+.rptrWbirData
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: #ddeaff;
+}
+
+.rptrWbiralt
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: #f2f2f2;
+}
+
+.actionLabel
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: bold;
+	Text-Align: Left;
+	color: Lemonchiffon;
+}
+
+.actionLink
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: normal;
+	Text-Align: Left;
+	color: White;
+	FONT-WEIGHT: bold;
+}
+
+a.actionLink:hover
+{
+	color: Lemonchiffon;
+	FONT-WEIGHT: bold;
+}
+
+.BaseDateCalendar
+{
+	BORDER-RIGHT: lightgrey ridge;
+	BORDER-TOP: lightgrey ridge;
+	BORDER-LEFT: lightgrey ridge;
+	BORDER-BOTTOM: lightgrey ridge;
+	WIDTH: 175px;
+	background: white
+}
+.BaseDateTable
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: Arial;
+	color: Black
+}
+.BaseDateHdrCell
+{
+	text-align: center;
+	vertical-align: middle
+}
+.BaseDateDayOfWeekRow
+{
+	background-color: #66ccff;
+	color: charcoal;
+	font-size: 7pt;
+	text-align: center
+}
+.BaseDateDayOfMonthCell
+{
+	border: silver 1px solid;
+	vertical-align: middle;
+	text-align: right;
+	cursor: hand;
+}
+.BaseDateCurrentDayCell
+{
+	border: silver 1px solid;
+	vertical-align: middle;
+	text-align: right;
+	font-weight: bold;
+	cursor: hand;
+}
+.BaseDateSelectedCurrentDayCell
+{
+	border: silver 1px solid;
+	vertical-align: middle;
+	text-align: right;
+	font-weight: bold;
+	background-color: gold;
+	cursor: hand;
+}
+.BaseDateSelectedDayOfMonthCell
+{
+	border: silver 1px solid;
+	vertical-align: middle;
+	text-align: right;
+	background-color: gold;
+	cursor: hand;
+}
+.BaseDateDayOutsideOfMonthCell
+{
+	border: silver 1px solid;
+	vertical-align: middle;
+	text-align: right;
+	color: Gray;
+	cursor: hand;
+}
+
+.PDPContextMenu
+{
+   border-right: lightgrey 1px solid;
+   border-top: lightgrey 1px solid;
+   font-size: 8pt;
+   border-left: lightgrey 1px solid;
+   border-bottom: lightgrey 1px solid;
+   font-family: Arial;
+   background-color: white;
+}
+
+.PDPContextMenu TABLE
+{
+   font-size: 8pt;
+   font-family: Arial;
+   background-color: white;
+}
+
+.rptTree
+{
+	color: #4d4d4d;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+}
+
+a.rptTree:link
+{
+	color: #1e376d;
+}
+a.rptTree:visited
+{
+	color: #1e376d;
+}
+a.rptTree:hover
+{
+	color: #242037;
+}
+
+.rptTreeWebI
+{
+	color: Black;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+}
+
+a.rptTreeWebI:link
+{
+	color: Blue;
+}
+a.rptTreeWebI:visited
+{
+	color: Blue;
+}
+a.rptTreeWebI:hover
+{
+	color: #242037;
+}
+
+.chkIFrame
+{
+	background-color: #cdcdcd;
+	BORDER:  black solid 1px;
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-TOP: 5px;
+	PADDING-BOTTOM: 15px;
+}
+.chklabel {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: center;
+	color: #1e376d;
+	}
+.wbirTitleBig {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 16px;
+	FONT-WEIGHT: bold;
+	Text-Align: center;
+	color: royalblue;
+	}
+.wbirTitleSmall {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 9px;
+	FONT-WEIGHT: bold;
+	Text-Align: center;
+	color: royalblue;
+	}
+.dgEditItemText
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 9px;
+	Text-Align: left;
+	color: Black;
+}
+
+.readonlyfield
+{
+	FONT-SIZE: 11px;
+	border: solid 1px;
+	border-color: silver;
+	background-color: #DDEAFF;
+}
+
+.readonlyfieldalignright
+{
+	FONT-SIZE: 11px;
+	border: solid 1px;
+	border-color: silver;
+	background-color: #DDEAFF;
+	text-align: right
+}
+.webkit .navtablegray {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: normal;
+	color: black;
+	background-color: silver;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+	Width: 830px;
+}
+
+.ie .navtablegray {
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: normal;
+	color: black;
+	background-color: silver;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+	Width: 820px;
+}
+
+.webkit .navgrid
+{
+	Width: 830px;
+    border: 1px;
+    border-style: solid;
+    border-color: darkgray;
+}
+
+.ie .navgrid
+{
+	Width: 820px;
+    border: 1px;
+    border-style: solid;
+    border-color: darkgray;
+}
+
+.formsPWLink
+{
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: normal;
+	Text-Align: Left;
+}
+a.formsPWLink:link
+{
+	color: Tomato;
+}
+
+a.formsPWLink:visited
+{
+	color: Tomato;
+}
+a.formsPWLink:hover
+{
+	color: Tomato;
+	FONT-WEIGHT: bold;
+}
+
+/* Styles for WBIR Wizard */
+
+#divWaitBackground
+{
+	position:absolute;
+	z-index: 900;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color:Gray;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+}
+
+#waitAnimation
+{
+	white-space: nowrap;
+	z-index:999;
+}
+
+.absoluteCenterContainer
+{
+	position:absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.absoluteCenterContents
+{
+	position: relative;
+	left: -50%;
+	top: -50%;
+}
+
+/*Replicates ext class(used on expandables on all classic screens), inorder to style BaseLinks the same*/
+.extMTrEBaseLink
+{
+	color: #1e376d;
+	BACKGROUND-COLOR: transparent;
+	text-decoration: none;
+	TEXT-ALIGN: left;
+	BORDER-BOTTOM-STYLE: none;
+	FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	FONT-SIZE:10pt;
+	FONT-WEIGHT: bold;
+}
+.ext a:link
+{
+	color: #1e376d;
+	text-decoration: none;
+}
+.ext a:visited
+{
+	color: #1e376d;
+	 text-decoration: none;
+}
+.ext a:hover
+{
+	color: #242037;
+	 text-decoration: none;
+}

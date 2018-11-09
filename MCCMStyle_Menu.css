@@ -1,0 +1,39 @@
+.MenuPad  {
+	padding: 1px;
+	background-color: #1E376D;
+	border: outset 1px black;
+}
+.MenuItemOff  {
+	padding: 1px 6px;
+	border: solid 1px black;
+	background-color: #1E376D;
+}
+.MenuItemOn  {
+	padding: 1px 6px;
+	border: solid 1px black;
+	background-color: #97b4de;
+	cursor: default;
+}
+.MenuFont  {
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	color: #ffffff;
+	text-align: left;	
+}
+.MenuTagMain  {
+	float: right;
+	width: 11px;
+	height: 9px;
+	background: url("../mccm/images/tagDH.gif") no-repeat center;	
+}	
+.MenuTagSub  {
+	float: right;
+	width: 11px;
+	height: 9px;
+	background: url("../mccm/images/tagRH.gif") no-repeat center;
+}	
+.MenuSeparator  {
+	background-color: #F2F2F2;
+}

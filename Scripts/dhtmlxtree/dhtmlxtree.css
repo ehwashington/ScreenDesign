@@ -1,0 +1,110 @@
+.defaultTreeTable{
+			margin : 0px;
+			padding : 0px;
+			border : 0px;
+}
+.containerTableStyle { overflow : auto; position:relative; top:0; font-size : 12px; }
+.containerTableStyleRTL span { direction: rtl; unicode-bidi: bidi-override;  }
+.containerTableStyleRTL { direction: rtl; overflow : auto; position:relative; top:0; font-size : 12px;}
+.standartTreeRow {	font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; 	font-size : 12px; -moz-user-select: none;  }
+.selectedTreeRow{ background-color : navy; color:white; font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; 		font-size : 12px;  -moz-user-select: none; }
+.dragAndDropRow{ background-color : navy; color:white; }
+.standartTreeRow_lor{	text-decoration:underline; background-color : #FFFFF0; font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; 	font-size : 12px; -moz-user-select: none; }
+.selectedTreeRow_lor{   text-decoration:underline; background-color : navy; color:white; font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; 		font-size : 12px;  -moz-user-select: none; }
+
+.standartTreeImage{ width:18px; height:18px;  overflow:hidden; border:0; padding:0; margin:0;
+font-size:1px; }
+.hiddenRow { width:1px;   overflow:hidden;  }
+.dragSpanDiv,.dragSpanDiv td{ 	font-size : 12px; 	background-color:white; z-index:999 }
+
+
+.selectionBox{
+background-color: #FFFFCC;
+}
+.selectionBar {
+	top:0;
+	background-color: Black;
+	position:absolute;
+	overflow:hidden;
+	height: 2px;
+	z-index : 11;
+}
+
+.intreeeditRow{
+  width:100%; font-size:8pt; height:16px; border:1px solid silver; padding:0; margin:0;
+  -moz-user-select:  text;   
+}
+.dhx_tree_textSign{
+   font-size:8pt;
+   font-family:monospace;
+   width:21px;
+   color:black;
+   padding:0px;
+   margin:0px;
+   cursor:pointer;
+   text-align: center;
+}
+.dhx_tree_opacity{
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity=0);
+}
+.dhx_bg_img_fix{
+width:18px;
+height:18px;
+background-repeat: no-repeat;
+background-position: center;
+background-position-x: center;
+background-position-y: center;
+}
+
+
+.dhxtree_dhx_black{
+	background:white;
+	color:black;
+}
+
+.formName
+{
+font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; 	font-size : 12px; -moz-user-select: none;  
+}
+
+.standardFolder
+{
+font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; font-weight:bold;	font-size : 11px; -moz-user-select: none;  
+}
+
+.standardNode
+{
+font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; 	font-size : 11px; -moz-user-select: none;  
+}
+
+.settingNode
+{
+font-family : Arial,"Helvetica Neue",Helvetica,sans-serif;  color:steelblue; text-decoration:underline;	font-weight: bold; font-size : 11px; -moz-user-select: none;  
+}
+  .settingNode A:Visited {color: steelblue;  text-decoration: underline; }
+  .settingNode A:Hover  {color: black; }
+  .settingNode A:Link   {color: steelblue;  text-decoration: underline;
+}
+.invisibleNode
+{
+	visibility:hidden;
+}
+.defaultSettingNode
+{
+font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; color: steelblue;  text-decoration:underline;	font-weight: bold; font-size : 11px; -moz-user-select: none;  
+}
+  .defaultSettingNode A:Visited {color: steelblue;  text-decoration: underline; }
+  .defaultSettingNode A:Hover  {color: black;}
+  .defaultSettingNode A:Link   {color: steelblue;  text-decoration: underline;}
+  
+.SearchNode
+{
+font-family : Arial,"Helvetica Neue",Helvetica,sans-serif; color: steelblue;  text-decoration:underline;	font-weight: bold; font-size : 11px; -moz-user-select: none;  
+}
+  .SearchNode A:Visited {color: steelblue;  text-decoration: underline; }
+  .SearchNode A:Hover  {color: black;}
+  .SearchNode A:Link   {color: steelblue;  text-decoration: underline;}
+  
+

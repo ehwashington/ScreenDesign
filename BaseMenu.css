@@ -1,0 +1,140 @@
+.MenuButton
+{
+	border: outset;
+	font-family:  Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+    font-weight:  normal;
+	color: White;
+	background-color: Maroon;
+    border-right-color: Brown; 
+    border-bottom-color: Brown; 
+    border-left-color: Palevioletred; 
+    border-top-color: Palevioletred; 
+	border-width: thin;
+	text-decoration: none;
+    text-align: center;
+	cursor: pointer;
+    padding: 3px
+}
+.ie .MenuButton
+{
+	border: outset;
+	height: 18px;
+	font-family:  Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+    font-weight:  normal;
+	color: White;
+	background-color: Maroon;
+    border-right-color: Brown; 
+    border-bottom-color: Brown; 
+    border-left-color: Palevioletred; 
+    border-top-color: Palevioletred; 
+	border-width: thin;
+	text-decoration: none;
+    text-align: center;
+	cursor: pointer;
+    padding: 3px
+}
+.MenuSpacer
+{
+    border-color: #cc9966;
+    border-style: solid;
+    border-bottom: none;
+    border-width: 1px;
+    padding: 0px;
+    margin: 0px
+}
+.MenuItemSelected[IsMenuItemSelected="Y"]
+{
+    background-color: #cc9966
+}
+.MenuTextMain
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    white-space: nowrap
+}
+.MenuTextSub
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    white-space: nowrap
+}
+.MenuTable
+{
+    background-color:#830031; 
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: left;
+	border: outset 1px #830031;
+	cursor: pointer;
+	z-index: 999
+}
+.MenuTable A:Visited {color: #ffffff;  text-decoration: none;}
+.MenuTable A:Hover  {color: #ffffff; font-weight: none;}
+.MenuTable A:Active  {color: #ffffff; font-weight: none;}
+.MenuTable A:Link   {color: #ffffff;  text-decoration: none;}
+.MenuTableSub
+{
+    background-color:#830031; 
+    border-collapse:collapse; 
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: left;
+	border: outset 1px #830031;
+	cursor: pointer;
+	position: relative;
+	left: -12px;
+	top: 18px;
+}
+.gecko .MenuTableSub
+{
+    background-color:#830031; 
+    border-collapse:collapse; 
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: left;
+	border: outset 1px #830031;
+	cursor: pointer;
+	position: relative;
+	left: -12px;
+	top: 24px;
+}
+.MenuTableSubRight
+{
+    background-color:#830031; 
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: left;
+	border: outset 1px #830031;
+	cursor: pointer;
+	position: relative;
+	top: -1px;
+	left: 2px
+}
+.webkit .MenuTableSubRight
+{
+    background-color:#830031; 
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: left;
+	border: outset 1px #830031;
+	cursor: pointer;
+	position: relative;
+	top: -3px;
+	left: 3px
+}

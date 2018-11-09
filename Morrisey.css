@@ -1,0 +1,1698 @@
+﻿.pad.safari .NotOnIpad
+{
+    display:none
+}
+
+.webkit .NotOnWebkit
+{
+    display:none
+}
+.pad .touchsize
+{
+    zoom: 1.45;
+    position: relative
+}
+.pad .touchsizesmall
+{
+    zoom: 1.3;
+    position: relative
+}
+.safari .touchposition
+{
+    position: relative;
+    top: 5px
+}
+.pad .touchposition
+{
+    top: -2px
+}
+
+.PacketTask
+{
+     background-color: Snow;
+}
+
+.richtextbox
+{
+	border: #99ccff inset 1px;
+	padding: 3px;
+	overflow: auto;
+	color: Black; 
+	background-color: White;
+}
+
+.richtextbox a:Visited {color:steelblue;  text-decoration: underline;}
+.richtextbox a:Hover  {color:maroon; text-decoration: underline;}
+.richtextbox a:Active  {color:maroon; text-decoration: underline;}
+.richtextbox a:Link   {color:steelblue;  text-decoration: underline;}
+
+.f1Title {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    	FONT-SIZE: 12pt;
+	color: Firebrick; 
+    	FONT-WEIGHT: 700;
+	TEXT-ALIGN: center;
+}
+.F1Confidential  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8pt;
+    	FONT-WEIGHT: bold;
+	color: Firebrick;
+}
+
+.f1Major  { 
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: navy;
+    FONT-FAMILY: Verdana, Arial, helvetica, sans-serif;
+    text-align:center;
+    vertical-align:central;
+    background-color: lightsteelblue
+     
+}
+.f1Mid  {
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: royalblue;
+    FONT-FAMILY: Verdana, Arial, helvetica, sans-serif;
+}
+.F1Minor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8pt;
+    FONT-WEIGHT: Normal;
+	color: Royalblue;
+}
+.F1Samll  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 10px;
+    FONT-WEIGHT: Normal;
+	color: Black;
+}
+
+.hide 
+{
+	display: none
+}
+.invisible 
+{
+	visibility: hidden
+}
+.HdrTitle {
+	position:absolute;
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; 
+    FONT-SIZE: 12pt;
+	color: Firebrick; 
+    FONT-WEIGHT: 700;
+	TEXT-ALIGN: center;
+}
+
+.headermajor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 12pt;
+    FONT-WEIGHT: Bold;
+	color: Blue;
+}
+
+.headermajorsmaller  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 10pt;
+    FONT-WEIGHT: Bold;
+	color: Blue;
+}
+
+.headerminor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8pt;
+    FONT-WEIGHT: Normal;
+	color: Royalblue;
+}
+
+.headerminorbold  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8pt;
+    FONT-WEIGHT: Bold;
+	color: Royalblue;
+}
+
+.headerproductinfo {
+	position:absolute;
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; 
+    FONT-SIZE: 12pt;
+	color: Firebrick; 
+    FONT-WEIGHT: 700;
+	TEXT-ALIGN: center;
+}
+
+.inforegion
+{
+	border: inset 1px black;
+	background-image: url(Images/smoothyellow.jpg);
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	padding: 2px 2px 2px 2px
+}
+
+.LogoText {
+	FONT-FAMILY:  Georgia, Garamond,  Book Antiqua, serif; 
+    	FONT-SIZE: 10pt;
+	color: royalBlue;
+	FONT-WEIGHT: bold;
+	TEXT-ALIGN: left;
+}
+
+.popuphdr
+{
+	border: solid 1px black;
+	background-image: url(images/garlic.jpg);
+	background-color: Lime;
+}
+
+.popuphdrtitle
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 12pt;
+    FONT-WEIGHT: Bold;
+	color: dimgray;
+}
+
+.taskpad
+{
+	border: solid 1px black;
+	border: none;
+	border-width: 0;
+}
+
+.taskpadhdr
+{
+	COLOR: royalblue;
+	FONT-FAMILY: Comic Sans MS, Verdana, Arial;
+	FONT-SIZE: 15px;
+	FONT-WEIGHT: bolder;
+	text-align: center;
+}
+
+.taskpaditem
+{
+	padding-left: 40px;
+	text-align: left; 
+	font-size: 8pt; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	height: 15px;
+}
+
+.taskpadcounts
+{
+	FONT-SIZE: -2;
+	padding-left: 2px;
+	text-align: left; 
+	font-size: 8pt; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-WEIGHT: bold;
+	height: 15px;
+}
+
+.taskpaditem A:Visited {color: black;  text-decoration: none;}
+.taskpaditem A:Hover  {color: Tomato; font-weight: bold;}
+.taskpaditem A:Active  {color: Tomato; font-weight: bold;}
+.taskpaditem A:Link   {color: black;  text-decoration: none;}
+
+.tasksubheader
+{
+	text-align: center;
+	background-color: White;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: royalblue; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+
+.info
+{
+	color: dimgray;
+	border-color: dimgray;
+	text-align: left;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+
+.boxedinfo
+{
+	color: dimgray;
+	border-color: dimgray;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.boxedinfosmallfont
+{
+	color: dimgray;
+	border-color: dimgray;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: Lightgoldenrodyellow;
+}
+.boxedinfosmallfontlabel
+{
+	text-align: right;
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+	padding-right: 1px;
+}
+.boxedinfocontents
+{
+	color: dimgray;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+
+.featuredbackground
+{
+	background-image: url(Images\wiz_bkgrnd.gif);
+}
+
+.labelprompt
+{
+	text-align: right;
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	padding-right: 5px;
+}
+
+.labelpromptalt
+{
+	text-align: right;
+	color: Red; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	padding-right: 5px;
+	background-color: Lavender;
+}
+
+.inputfield
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	border: solid 1px #999999;
+}
+
+.webkit .inputfield
+{
+	height: 11px
+}
+
+.readonlyfield
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	border: solid 1px;
+	border-color: silver;
+	background-color: Lightgoldenrodyellow;
+}
+
+.webkit .readonlyfield
+{
+	height: 11px
+}
+
+.datagridtitlebarinputfield
+{
+	text-align: left; 
+	color: royalblue; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+}
+
+.inputfieldright
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: right;
+	border: solid 1px #999999;
+}
+
+.inputfieldcenter
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: center;
+	border: solid 1px #999999;
+}
+.inputfielddim
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	background-color: silver;
+	border:solid 1px #999999;
+}
+
+.inputfieldcurrency
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: right;
+	border: solid 1px #999999;
+	behavior: url(maskCurrency.htc);
+}
+	
+.displayfield
+{
+	color: Black;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+	background-color: Lemonchiffon;
+	border: None;
+}
+
+.cbotext 
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	Text-Align: left;
+	border:solid 1px #999999;
+}
+
+.webkit .cbotext
+{
+	height: 11px
+}
+
+.cboselector 
+{
+	height: 17px;
+	width: 15px;
+	border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+	border-left: none;
+	border-right: solid 1px #999999;
+}
+
+.webkit .cboselector 
+{
+   	height: 11px;
+	width: 15px
+}
+.pad .cboselector 
+{
+    position: relative;
+    left:-4px;
+	padding-right: 3px;
+	padding-left: 2px
+}
+
+.cboselectornonudge 
+{
+	height: 17px;
+	width: 15px;
+	border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+	border-left: none;
+	border-right: solid 1px #999999;
+}
+
+.cbolist
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10px;
+	Text-Align: left;
+	border: none;
+	background-color: Aqua;
+}
+
+.cbostatus
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 9px;
+	font-weight: normal;
+	Text-Align: left;
+	border-style:none; 
+	background-color: Silver;
+	color: Maroon;
+	padding:2px;
+}
+
+.lastupdatedinfo
+{
+	border: none; 
+	font-size: 12px; 
+	background-color: transparent;
+	color: dimgray;
+}
+
+.summarychart table
+{
+	border-collapse: collapse;
+	border-color: Black;
+	border-width: 1px;
+}
+
+.summarycharthdr
+{
+	color: dimgray; 
+	text-align: center;
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: Gainsboro;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.summarychartfirstcolumn
+{
+	color: dimgray; 
+	text-align: right;
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: Gainsboro;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.summarychartcell
+{
+	color: black; 
+	text-align: right;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: white;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px 2px 2px 2px;
+}
+
+.errorhdrtext
+{
+	font-size: 1.2em;
+	color: #800033;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.errorbox
+{
+	background-color: Gainsboro;
+	border-color: Firebrick;
+	FONT-FAMILY:  Arial, Verdana,Helvetica, sans-serif; 
+	border: solid;
+	border-width: 1pt; 
+	font-size: 8pt;
+	color: Firebrick;
+}
+
+
+  .wizinput {
+	border: 1px solid; 
+	font-size: 9px; 
+	background-color: WhiteSmoke;
+}
+  .wizinputbig {
+	border: 2px inset; 
+	font-size: 8pt; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+  .wizreadonly {
+	border: 1px solid; 
+	font-size: 9px; 
+	background-color: transparent;
+	border-color: dimgray;
+	color: dimgray;
+}
+  .wizreadonlyalt {
+	border: none; 
+	font-size: 9px; 
+	background-color: transparent;
+	color: dimgray;
+}
+  .tabletext {
+	padding-left: 28px;
+	text-align: left; 
+	font-size: 8pt; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-underline-position:below;
+}
+  .tabletext A:Visited {color: blue;  text-decoration: underline; }
+  .tabletext A:Hover  {color: Tomato; font-weight: bold;}
+  .tabletext A:Link   {color: blue;  text-decoration: underline;
+}
+  .actiontext {
+	padding-left: 28px;
+	text-align: left; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-underline-position:below;
+}
+  .actiontext A:Visited {color: steelblue;  text-decoration: underline; }
+  .actiontext A:Hover  {color: black; font-weight: bold;}
+  .actiontext A:Link   {color: steelblue;  text-decoration: underline;
+}
+
+  .tasktext {
+	padding-left: 10px;
+	text-align: left; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-underline-position:below;
+}
+  .tasktext A:Visited {color: steelblue;  text-decoration: underline; }
+  .tasktext A:Hover  {color: black; font-weight: bold;}
+  .tasktext A:Link   {color: steelblue;  text-decoration: underline;}
+  
+  .tabletextdata {
+	padding-left: 28px;
+	text-align: left; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+  .tabletextdata A:Visited {color: black;  text-decoration: none; }
+  .tabletextdata A:Hover  {color: Tomato; font-weight: bold;}
+  .tabletextdata A:Active  {color: Tomato; font-weight: bold;}
+  .tabletextdata A:Link   {color: black;  text-decoration: none;}
+
+  .tablehead {
+	padding-left: 12px;
+	border-bottom: 3px solid dimgray; 
+	height: 25px;
+	color: dimgray;
+	background-color: #d2d2d2;
+	text-align: left; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+  .tablerow {
+	 padding-bottom: 5px; 
+}
+   .checkmark {
+	padding-right: 10px;
+	font-family: Symbol; 
+	font-size: 14px; 
+	color: green; 
+	font-weight: bold;
+	visibility: hidden;
+}
+
+  .wiztoolbartext {
+	text-align: center; 
+	color: royalblue; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 16px;
+}
+  .wiztext {
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+  .wizsmalltext {
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+}
+  .wizhyperlink {
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}  
+  .wizhyperlink A:Visited {color: royalblue;  text-decoration: none}
+  .wizhyperlink A:Hover  {color: orange}
+  .wizhyperlink A:Active  {color: orange; }
+  .wizhyperlink A:Link   {color: royalblue;  text-decoration: none}
+
+
+
+.wizheader {
+	text-align: center;
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+  .wizradio {
+	text-align: left;
+	color: dimgray; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+ 
+  .wiztable {
+	color: black; 
+	text-align: left;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: Burlywood;
+}
+
+.wiztable a:link
+{
+	color: Maroon;
+}
+.wiztable a:visited
+{
+	color: Maroon;
+}
+.wiztable a:hover 
+{
+	color: Tomato;
+}
+
+  .wiztablealt {
+	color: black; 
+	text-align: left;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: PaleGoldenrod;
+}
+
+.wiztablealt a:link
+{
+	color: Maroon;
+}
+.wiztablealt a:visited
+{
+	color: Maroon;
+}
+.wiztablealt a:hover 
+{
+	color: Tomato;
+}
+  .wiztablehead {
+	color: white; 
+	text-align: left;
+	font-weight: bold;
+	text-decoration: underline; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: Dimgray;
+}
+
+
+  .wizchart {
+	color: black; 
+	text-align: right;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: white;
+	border-color: black;
+}
+
+  .wizcharthead {
+	color: dimgray; 
+	text-align: right;
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: Gainsboro;
+	border-color: black;
+}
+
+.datarectangle
+{
+BORDER: silver 2px outset; 
+PADDING-RIGHT: 5px; 
+PADDING-LEFT: 5px; 
+PADDING-BOTTOM: 5px; 
+PADDING-TOP: 5px; 
+background-image: url(images/pap2.gif);
+}
+
+.framedatarectangle
+{
+BORDER: silver 2px outset; 
+}
+
+.menubttn{
+	border: outset;
+	FONT-FAMILY:  Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 11px;
+    FONT-WEIGHT:  normal;
+	color: wheat;
+	background-color: Maroon;
+    BORDER-RIGHT-COLOR: Brown; 
+    BORDER-BOTTOM-COLOR: Brown; 
+    BORDER-LEFT-COLOR: Palevioletred; 
+    BORDER-TOP-COLOR: Palevioletred; 
+	border-width: thin;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 0;
+	text-decoration: none;
+    TEXT-ALIGN: center;}
+
+.menubttn a:visited{color: White;TEXT-DECORATION: none;}
+.menubttn a:hover {color: wheat;}
+.menubttn a:link{color: White;	TEXT-DECORATION: none;}
+
+
+
+
+.raisedbttn
+{
+	border-style: outset;
+	border-width: 2px;
+	border-color: none;
+}
+
+.xtf
+{
+	color: White;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: Dimgray;
+}
+.xth
+{
+	color: White;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: #989898;
+}
+.xth a:link
+{
+	color: #ffffff;
+}
+.xth a:visited
+{
+	color: #ffffff;
+}
+.xth a:hover 
+{
+	color: #ffffCC;
+}
+.xth td
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.xthoverflow
+{
+	color: White;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: #989898;
+    POSITION: relative;
+    TOP: expression(this.offsetParent.scrollTop - 2);
+}
+.xthoverflow a:link
+{
+	color: #ffffff;
+}
+.xthoverflow a:visited
+{
+	color: #ffffff;
+}
+.xthoverflow a:hover 
+{
+	color: #ffffCC;
+}
+.xthoverflow td
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.xtd
+{
+	
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	color: Black;
+	BACKGROUND-COLOR: White;
+}
+
+.xtd a:link
+{
+	color: Maroon;
+}
+.xtd a:visited
+{
+	color: Maroon;
+}
+.xtd a:hover 
+{
+	color: Tomato;
+}
+.xtd td
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.xtdalt
+{
+	color: Black;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	BACKGROUND-COLOR: #DBEDF7;
+}
+.xtdalt td
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;	
+}
+.xtdalt a:link
+{
+	color: Maroon;
+}
+.xtdalt a:visited
+{
+	color: Maroon;
+}
+.xtdalt a:hover 
+{
+	color: Tomato;
+}
+
+.xtdkey td
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.BaseDateCalendar
+{
+	BORDER-RIGHT: lightgrey ridge; 
+	BORDER-TOP: lightgrey ridge; 
+	BORDER-LEFT: lightgrey ridge; 
+	BORDER-BOTTOM: lightgrey ridge; 
+	WIDTH: 175px;
+	background: white
+}
+.BaseDateTable
+{
+	FONT-SIZE: 8pt; 
+	FONT-FAMILY: Arial;
+	color: Black
+}
+.BaseDateHdrCell
+{
+	text-align: center; 
+	vertical-align: middle
+}
+.BaseDateDayOfWeekRow
+{
+	background-color: #66ccff; 
+	color: charcoal; 
+	font-size: 7pt; 
+	text-align: center
+}
+.BaseDateDayOfMonthCell
+{
+	border: silver 1px solid; 
+	vertical-align: middle; 
+	text-align: right; 
+    cursor: hand; 
+}
+.BaseDateCurrentDayCell
+{
+	border: silver 1px solid;
+	vertical-align: middle; 
+	text-align: right; 
+	font-weight: bold; 
+    cursor: hand;
+}
+.BaseDateSelectedCurrentDayCell
+{
+	border: silver 1px solid;
+	vertical-align: middle; 
+	text-align: right;
+	font-weight: bold; 
+	background-color: gold; 
+    cursor: hand;
+}
+.BaseDateSelectedDayOfMonthCell
+{
+	border: silver 1px solid;
+	vertical-align: middle; 
+	text-align: right;
+	background-color: gold; 
+    cursor: hand;
+}
+.BaseDateDayOutsideOfMonthCell
+{
+	border: silver 1px solid;
+	vertical-align: middle; 
+	text-align: right;
+	color: Gray; 
+    cursor: hand;
+}
+
+.CSCCalendar
+{
+   border-right: lightgrey ridge;
+   border-top: lightgrey ridge;
+   font-size: 8pt;
+   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=3, OffY=3, Color= 'gray' , Positive= 'true' ) progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=20, Style=1, StartX=96, FinishX=100, StartY=0, FinishY=0) progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=20, Style=1, StartX=0, FinishX=0, StartY=97, FinishY=100);
+   border-left: lightgrey ridge;
+   border-bottom: lightgrey ridge;
+   font-family: Arial;
+   background-color: white;
+}
+
+.CSCCalendar TABLE
+{
+   font-size: 8pt;
+   font-family: Arial;
+   background-color: white;
+}
+
+.CSCCalendarNoFilter
+{
+   border-right: lightgrey ridge;
+   border-top: lightgrey ridge;
+   font-size: 8pt;
+   border-left: lightgrey ridge;
+   border-bottom: lightgrey ridge;
+   font-family: Arial;
+   background-color: white;
+   }
+.CSCCalendarNoFilter TABLE
+{
+   font-size: 8pt;
+   font-family: Arial;
+   background-color: white;
+}
+
+
+.CSCWeekRowsTable
+{
+   border-right: black 1px solid;
+   border-top: black 1px solid;
+   font-size: 8pt;
+   border-left: black 1px solid;
+   border-bottom: black 1px solid;
+   font-family: Arial;
+   background-color: white;
+}
+
+.CSCDay
+{
+ /*  cursor: pointer;  /* W3C approved hand. See http://www.xs4all.nl/~ppk/css2tests/index.html */
+   cursor: hand;
+}
+
+.CSCSelectedDay
+{
+   background-color: gold;
+ /*  cursor: pointer; */
+   cursor: hand;
+}
+.CSCSelectedToday
+{
+   font-weight: bold;
+   background-color: gold;
+  /* cursor: pointer;*/
+   cursor: hand;
+}
+.CSCToday
+{
+   font-weight: bold;
+ /*  cursor: pointer;*/
+   cursor: hand;
+}
+.CSCSpecialDay
+{
+  /* cursor: pointer;*/
+   cursor: hand;
+   background-color: lemonchiffon;
+}
+
+.CSCOtherMonthDays
+{
+   cursor: default;
+   color: gray;
+}
+
+.CSCDayHeader
+{
+   border-bottom: blue 1px solid;
+}
+
+.CSCDayHeader TR
+{
+   font-size: 7pt;
+   background-color: lightblue;
+}
+
+.CSCDayHeaderCell
+{
+   font-size: 7pt;
+}
+
+.CSCHeaderTable
+{
+   font-size: 8pt;
+   border-bottom: blue 1px solid;
+   font-family: Arial;
+}
+
+.CSCHeaderRows
+{
+   font-size: 8pt;
+   font-family: Arial;
+   cursor: default;
+}
+
+.CSCHeaderRows TR
+{
+   background-color: inherit;
+}
+
+.CSCIncrementalButtons
+{
+ /*  cursor: pointer;*/
+   cursor: hand;
+   color: mediumblue;
+}
+
+.CSCIncrementalButtonsPressed
+{
+ /*  cursor: pointer;*/
+   cursor: hand;
+   color: darkblue;
+}
+
+.CSCJumpButtons
+{
+   color: mediumblue;
+  /* cursor: pointer;*/
+   cursor: hand;
+}
+
+.CSCJumpButtonsPressed
+{
+   color: darkblue;
+  /*cursor: pointer;*/
+   cursor: hand;
+}
+
+.CSCCloseButton
+{
+   cursor: default;
+}
+
+.CSCCloseButtonPressed
+{
+   cursor: default;
+}
+.CSCHelpButton
+{
+   cursor: default;
+}
+
+.CSCHelpButtonPressed
+{
+   cursor: default;
+}
+
+.CSCFooterButton
+{
+   border-right: lightgrey thin outset;
+   border-top: lightgrey thin outset;
+   border-left: lightgrey thin outset;
+   color: black;
+   border-bottom: lightgrey thin outset;
+   background-color: lightblue;
+   font-size: 8pt;
+   font-family: Arial;
+   /*cursor: pointer;*/
+   cursor: hand;
+}
+
+.CSCFooterButtonPressed
+{
+   border-right: lightgrey thin inset;
+   border-top: lightgrey thin inset;
+   border-left: lightgrey thin inset;
+   border-bottom: lightgrey thin inset;
+   background-color: lightblue;
+   color: black;
+   font-size: 8pt;
+   font-family: Arial;
+  /* cursor: pointer;*/
+   cursor: hand;
+}
+
+.MYPMonthYearPicker
+{
+   border-right: gray 1px solid;
+   border-top: gray 1px solid;
+   font-size: 8pt;
+   border-left: gray 1px solid;
+   border-bottom: gray 1px solid;
+   font-family: Arial;
+   background-color: white;
+}
+
+.MYPMonthYearPicker TABLE
+{
+   font-size: 8pt;
+   font-family: Arial;
+   background-color: white;
+}
+
+.MYPMonthCell
+{
+  /* cursor: pointer;*/
+   cursor: hand;
+}
+
+.MYPSelectedMonthCell
+{
+   background-color: gold;
+ /*  cursor: pointer;*/
+   cursor: hand;
+}
+
+
+.MYPYearCell
+{
+ /* cursor: pointer;*/
+   cursor: hand;
+}
+.MYPSelectedYearCell
+{
+ /* cursor: pointer;*/
+   cursor: hand;
+   background-color: gold;
+}
+
+.MYPOutOfRangeCell
+{
+   color: gray;
+}
+
+.PDPContextMenu
+{
+   border-right: lightgrey 1px solid;
+   border-top: lightgrey 1px solid;
+   font-size: 8pt;
+   border-left: lightgrey 1px solid;
+   border-bottom: lightgrey 1px solid;
+   font-family: Arial;
+   background-color: white;
+}
+
+.PDPContextMenu TABLE
+{
+   font-size: 8pt;
+   font-family: Arial;
+   background-color: white;
+}
+
+.multipageMTrE
+{
+	Color: Dimgray;
+	border-color: Dimgray;
+	background-color: Gainsboro;
+	background-image: url(../mccm/Images/pap2.gif);
+	BORDER: outset 3px; 
+	BORDER-TOP: medium none;
+	PADDING-RIGHT: 5px; 
+	PADDING-LEFT: 15px;
+	PADDING-TOP: 15px;
+}
+.labelMTrE {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: bold;
+	Text-Align: right;
+	color: Dimgray;
+	}
+.labelLightMTrE {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: normal;
+	Text-Align: right;
+	color: Dimgray;
+	}
+
+.SmallButton
+{
+	width: 75px; 
+	font-weight: bold;
+}
+
+/* This stuff is from the privConfig; */
+
+
+.tablelabel {
+	text-align: right;
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	padding-right: 5px;
+}
+ .tablelabelleft {
+	text-align: left;
+	color: dimgray; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	padding-right: 5px;
+}
+  .tableinput {
+	border: 1px solid silver; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 7pt; 
+	background-color: White;
+}
+  .tableinputbig {
+	border: 2px inset; 
+	font-size: 8pt; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+  .helptable {
+	color: dimgray; 
+	text-align: left;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: AliceBlue;
+}
+.bigbluetext
+{
+    FONT-SIZE: 10pt;
+    font-weight: bold;
+    COLOR: royalBlue;
+    FONT-FAMILY: Verdana, Arial, helvetica, sans-serif;
+}
+.biginstructiontext {
+	color: black; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10pt;
+}
+.medinstructiontext {
+	color: black; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt;
+}
+.smallinstructiontext {
+	color: black; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: LightYellow;
+	border: 1px solid;
+}
+.smallinstructionhead {
+	border-bottom: 3px solid dimgray; 
+	height: 25px;
+	color: dimgray;
+	background-color: #d2d2d2;
+	text-align: center; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.instructiontext {
+	color: black; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+}
+
+.popupMajor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 12pt;
+    	FONT-WEIGHT: Bold;
+	color: dimgray;
+}
+ 
+.popupMedium  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 11pt;
+    	FONT-WEIGHT: Bold;
+	color: dimgray;
+}
+.popupMinor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8pt;
+    	FONT-WEIGHT: Normal;
+	color: dimgray;
+}
+
+.plaintable {
+	color: black; 
+	text-align: left;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: White;
+	border: 1px solid silver;
+}
+
+  .plaintablealt {
+	color: black; 
+	text-align: left;
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: Lightsteelblue;
+	border: 1px solid silver; 
+}
+  .plaintablehead {
+	color: black; 
+	text-align: left;
+	font-weight: bold;
+	text-decoration: none;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	BACKGROUND-COLOR: WhiteSmoke;
+	border: 1px solid silver; 
+}
+
+.newsdate {
+	color: black; 
+	font-weight: bold;
+	text-align: right; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+}
+
+.newstext {
+	color: black; 
+	font-weight: normal; 
+	text-align: left; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt;
+	padding-left: 15px;
+}
+.newshead {
+	color: royalblue; 
+	font-weight: bold;
+	text-align: left; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10pt;
+	padding-left: 15px;
+} 
+.searchresultslink {
+	height: 17px;
+	text-align: right; 
+	font-size: 8pt; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	color: black;
+	text-decoration: underline;
+}
+
+
+  .searchresults {
+	padding-left: 15px;
+	height: 17px;
+	text-align: left; 
+	font-size: 10pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+  .searchresults A:Visited {color: steelblue;  text-decoration: underline; }
+  .searchresults A:Hover  {color: black; text-decoration: underline;}
+  .searchresults A:Active  {color: black; text-decoration: underline;}
+  .searchresults A:Link   {color: steelblue;  text-decoration: underline
+}
+  .searchresultstext {
+	color: black; 
+	padding-left: 20px;
+	padding-bottom: 2px;
+	height: 17px;
+	text-align: left; 
+	font-size: 9pt; 
+	font-weight: normal; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+  .searchresultshead {
+	padding-left: 12px;
+	border-bottom: 3px solid dimgray; 
+	height: 25px;
+	color: Dimgray;
+	background-color: Lemonchiffon;
+	text-align: left; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+  .searchresultsheadsmall {
+	padding-right: 12px;
+	border-bottom: 3px solid dimgray; 
+	height: 25px;
+	color: Dimgray;
+	background-color: Lemonchiffon;
+	text-align: right; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+  .searchresultsfoot {
+	padding-left: 175px;
+	border-top: 3px solid dimgray; 
+	height: 25px;
+	color: Dimgray;
+	background-color: white;
+	text-align: left; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+.searchresultstitle
+{
+    FONT-SIZE: 10pt;
+    font-weight: bold;
+    COLOR: royalBlue;
+    FONT-FAMILY: Verdana, Arial, helvetica, sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+} 
+.stdpanelgriddiv
+{
+    background-image: url(Images/LightGreyBk.jpg);
+    background-repeat:repeat; 
+}
+.pad .stdpanelgriddiv
+{
+  background-image: url(Images/LightGreyBkGrad.png);
+}
+
+.HdrTitle {
+	position:absolute;
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; 
+	FONT-SIZE: 12pt;
+	color: Firebrick; 
+	FONT-WEIGHT: 700;
+	TEXT-ALIGN: center;
+}
+
+.headermajor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 12pt;
+	FONT-WEIGHT: Bold;
+	color: Blue;
+}
+
+.headermajorsmaller  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: Bold;
+	color: Blue;
+}
+
+.headermajorsmallerfirebrick a:Link, a:Visited {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 10pt;
+	color: Firebrick;
+}
+
+.headerminor  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 11px;
+	FONT-WEIGHT: Normal;
+	color: Royalblue
+}
+.pad .headerminor
+{
+	line-height: 12px
+}
+
+.headerminorbold  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: Bold;
+	color: Royalblue;
+}
+.pad .headerminorbold
+{
+	line-height: 12px
+}
+
+.headerproductinfo {
+	position:absolute;
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; 
+	FONT-SIZE: 12pt;
+	color: Firebrick; 
+	FONT-WEIGHT: 700;
+	TEXT-ALIGN: center;
+}
+
+.r1Text {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12pt;
+}
+
+.r1Title {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: 700;
+	COLOR: Royalblue; 
+}
+
+.r1Link  {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12pt;
+	FONT-WEIGHT: Normal;
+	COLOR: Royalblue;
+}
+
+.faqContent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    text-align: justify;
+    display:none
+}
+
+.faqTitle {
+    padding-top: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.faqTitle a {color:royalblue;text-decoration:none;}
+.faqTitle a:Visited {color:royalblue;text-decoration:none;}
+.faqTitle a:Hover {color:royalblue;text-decoration:underline;}
+
+.SoftRowHighlight
+{
+	background-color: #DDEAFF;
+    
+	height: 80px;
+}
+
+.SoftRowHighlightAlt
+{
+	background-color: #f2f2f2;
+    
+	height: 80px;
+}
+.GridSoftBorder
+{
+	border-right: 0px solid #f0eae7;
+	border-left: 0px solid #f0eae7;
+	border-top: 5px solid #ffffff;
+	border-bottom: 5px solid #ffffff;
+}
+.GridBand
+{
+	height: 70px;
+}
+.GridSmallFont
+{
+	font-size: 9pt;
+}
+.GridWhiteBorder
+{
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.GridGrayBorder
+{
+	border: 1px solid #999999;
+	border-top: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+
+
+.SoftHeaderHighlight
+{
+	background-color: #1E376D;
+    border: 0px solid #1E376D;
+	border-top: 0px solid #1E376D;
+	border-right: 0px solid #1E376D;
+	border-bottom: 0px solid #1E376D;
+	border-left: 0px solid #1E376D;
+	height: 30px;
+    color:#ffffff;
+    FONT-WEIGHT: bold;
+    
+}
+
+.HdrTitleReport {
+	
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; 
+    FONT-SIZE: 12pt;
+	color: #FFFFFF; 
+    FONT-WEIGHT: 700;
+	TEXT-ALIGN: center;
+}

@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{BB377FAB-CD19-4CDD-BE5B-EFB8B1C8638A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ScreenDesign</RootNamespace>
+    <AssemblyName>ScreenDesign</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ScreenDesign.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ScreenDesign.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ABCpdf, Version=9.1.2.5, Culture=neutral, PublicKeyToken=a7a0b3f5184f2169, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MCCM\bin\ABCpdf.DLL</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExagoFileManagment\bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExagoDataLayer">
+      <HintPath>..\ExagoData\bin\ExagoDataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExagoFileManagment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExagoFileManagment\bin\ExagoFileManagment.dll</HintPath>
+    </Reference>
+    <Reference Include="MCCM">
+      <HintPath>..\MCCM\bin\MCCM.dll</HintPath>
+    </Reference>
+    <Reference Include="MCCMTrE">
+      <HintPath>..\MCCMClasses\bin\MCCMTrE.dll</HintPath>
+    </Reference>
+    <Reference Include="MTrE">
+      <HintPath>..\BaseLibrary\bin\MTrE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TallComponents.PDF.Kit, Version=4.0.35.1, Culture=neutral, PublicKeyToken=76bf2dedaa68ccb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BaseLibrary\ThirdPartyControls\TallComponents.PDF.Kit.dll</HintPath>
+    </Reference>
+    <Reference Include="WebReportsApi, Version=2016.3.0.104, Culture=neutral, PublicKeyToken=3be9896d52b1d3a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BaseLibrary\ThirdPartyControls\Exago\WebReportsApi.dll</HintPath>
+    </Reference>
+    <Reference Include="WebReportsAsmi">
+      <HintPath>..\BaseLibrary\ThirdPartyControls\Exago\WebReportsAsmi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="MCCMExagoReportsClasses" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MTrE" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Xml" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AJAXServer.aspx" />
+    <Content Include="BaseLogout.ascx" />
+    <Content Include="Controller.aspx" />
+    <Content Include="Empty.html" />
+    <Content Include="ExagoSecurity.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="ImagePopup.aspx" />
+    <Content Include="Images\books_close.gif" />
+    <Content Include="Images\Close.gif" />
+    <Content Include="Images\ComboDown.gif" />
+    <Content Include="Images\ComboUp.gif" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\FormReturn.gif" />
+    <Content Include="Images\garlic.jpg" />
+    <Content Include="Images\Go.gif" />
+    <Content Include="Images\Instructions.gif" />
+    <Content Include="Images\leaf2.gif" />
+    <Content Include="Images\LightGreyBk.jpg" />
+    <Content Include="Images\LightGreyBkGrad.png" />
+    <Content Include="Images\MorLogo_Transparent3.png" />
+    <Content Include="Images\Refresh.gif" />
+    <Content Include="Images\Search.gif" />
+    <Content Include="Images\Stick.gif" />
+    <Content Include="Images\wiz_addnew.gif" />
+    <Content Include="Images\wiz_bkgrnd.gif" />
+    <Content Include="Images\wiz_Del.gif" />
+    <Content Include="Images\wiz_left.gif" />
+    <Content Include="Images\wiz_next.gif" />
+    <Content Include="Images\wiz_prev.gif" />
+    <Content Include="Images\wiz_right.gif" />
+    <Content Include="Images\wiz_save.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="RequestServer.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AJAXServer.aspx.designer.vb">
+      <DependentUpon>AJAXServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAXServer.aspx.vb">
+      <DependentUpon>AJAXServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseLogout.ascx.designer.vb">
+      <DependentUpon>BaseLogout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseLogout.ascx.vb">
+      <DependentUpon>BaseLogout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controller.aspx.designer.vb">
+      <DependentUpon>Controller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.aspx.vb">
+      <DependentUpon>Controller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExagoSecurity.aspx.designer.vb">
+      <DependentUpon>ExagoSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExagoSecurity.aspx.vb">
+      <DependentUpon>ExagoSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePopup.aspx.designer.vb">
+      <DependentUpon>ImagePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePopup.aspx.vb">
+      <DependentUpon>ImagePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RequestServer.aspx.designer.vb">
+      <DependentUpon>RequestServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestServer.aspx.vb">
+      <DependentUpon>RequestServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskReporting.aspx.designer.vb">
+      <DependentUpon>RiskReporting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskReporting.aspx.vb">
+      <DependentUpon>RiskReporting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timeout.aspx.designer.vb">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timeout.aspx.vb">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Main.skin" />
+    <Content Include="App_Themes\TabContainer.skin" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Morrisey.css" />
+    <Content Include="RiskReporting.aspx" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\dhtmlxcommon.js" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\dhtmlxtabbar.css" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\dhtmlxtabbar.js" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\dhtmlxtabbar_start.js" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\ext\dhtmlxtabbar_wins.js" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\blank.html" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\modern\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\p_left_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\p_right_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\bottom\silver\sample.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\close.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\modern\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\TabSearch\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\TabSearch\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\TabSearch\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\TabSearch\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\TabSearch\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\left\TabSearch\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\loading.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\modern\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\right\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\scrl_b.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\scrl_l.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\scrl_r.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\scrl_t.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\close.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\c_a.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\c_p.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\l_a.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\l_p.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\r_a.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\r_p.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\scrl_l.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\scrl_r.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\blue\tabs-light.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\circuses\_p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\close.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\c_a.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\c_p.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\l_a.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\l_p.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\r_a.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\r_p.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\scrl_l.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dark\scrl_r.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dhxgrid_glassy_blue\a_left.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dhxgrid_glassy_blue\a_middle.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dhxgrid_glassy_blue\a_right.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dhxgrid_glassy_blue\p_left.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dhxgrid_glassy_blue\p_middle.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\dhxgrid_glassy_blue\p_right.png" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\modern\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\p_left_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\p_right_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\silver\sample.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\a_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\a_left_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\a_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\a_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\a_right_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\p_left.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\p_left_skos.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\p_middle.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\p_middle_over.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\p_right.gif" />
+    <Content Include="Scripts\dhtmlxTabbar\codebase\imgs\top\with_bg\p_right_skos.gif" />
+    <Content Include="Scripts\dhtmlxtree\dhtmlxcommon.js" />
+    <Content Include="Scripts\dhtmlxtree\dhtmlxtree.css" />
+    <Content Include="Scripts\dhtmlxtree\dhtmlxtree.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_attrs.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_dragin.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_ed.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_er.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_json.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_kn.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_lf.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_li.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_rl.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_sb.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_srnd.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_start.js" />
+    <Content Include="Scripts\dhtmlxtree\ext\dhtmlxtree_xw.js" />
+    <Content Include="Scripts\dhtmlxtree\imgs\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\books_close.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\books_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\but_cut.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconChecked.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconFlag.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconGraph.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconSound.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconTexts.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconWrite1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\iconWrite2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_algorithm\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\book.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\book_titel.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\but_cut.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\close2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconChecked.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconSafe.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line1_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line2_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line3_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\line4_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus2_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus3_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus4_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\minus5_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus2_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus3_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus4_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\plus5_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluebooks\tombs.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconCheckAll_2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconChecked.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconFlag.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconGraph.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconSound.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconTexts.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconWrite1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\iconWrite2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_bluefolders\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\tombs.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_books\tombs_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\books_close.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\books_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\DataPropertySpec.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\DataSpec.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\folderClosed - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\folderClosedBlue.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\folderOpen - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\folderOpenBlue.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconFlagPrereq.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconFlagValid.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconTextBlue.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconTextGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconTextsBlue.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconTextsGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\inprog2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf_2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf_orig.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\leaf_spec.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\PrivForm.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\PrivForm_Master.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\PrivForm_Organizer.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\Pub1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\safe_close.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\safe_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\tombs.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\tombs_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\ToolBox.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\topfolderClosed - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\topfolderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\topfolderOpen - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_hl7\topfolderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\books_close.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\books_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\folderClosed - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\folderOpen - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\inprog2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf_2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf_orig.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\leaf_spec.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\PrivForm.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\PrivForm_Master.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\PrivForm_Organizer.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\Pub1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\tombs.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\tombs_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\ToolBox.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\topfolderClosed - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\topfolderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\topfolderOpen - Copy.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_priv\topfolderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconChecked.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconFlag.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconGraph.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconSound.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconTexts.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconWrite1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\iconWrite2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\safe_close.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_scbrblue\safe_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconChecked.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconFlag.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconGraph.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconSound.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconTexts.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconWrite1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\iconWrite2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_vista\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconChecked.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconFlag.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconGraph.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconSound.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconTexts.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconWrite1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\iconWrite2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\leaves.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_winstyle\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\blank.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\books_close.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\books_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\iconText.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\leaf2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\leaf3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\leaf_2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\radio_on.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\tombs.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\csh_yellowbooks\tombs_open.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\folderClosed.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\folderOpen.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\iconCheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\iconCheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\iconCheckGray.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\iconUncheckAll.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\iconUncheckDis.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\leaf.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\leaf2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\leaf_spec.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line1.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line1_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line2_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line3_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\line4_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\lock.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus2_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus3_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus4_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus5_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\minus_ar.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus2.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus2_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus3.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus3_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus4.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus4_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus5.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus5_rtl.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\plus_ar.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\PrivForm_Master.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\radio_off.gif" />
+    <Content Include="Scripts\dhtmlxtree\imgs\radio_on.gif" />
+    <Content Include="Scripts\MTrE.js" />
+    <Content Include="Scripts\MTrE_AppLibrary.js" />
+    <Content Include="Scripts\MTrE_BaseDataGridDetail.js" />
+    <Content Include="Scripts\MTrE_BaseLinkGroup.js" />
+    <Content Include="Scripts\MTrE_Calendar.js" />
+    <Content Include="Scripts\MTrE_ClassicAjaxSupport.js" />
+    <Content Include="Scripts\MTrE_CoreFont.js" />
+    <Content Include="Scripts\MTrE_CorePassword.js" />
+    <Content Include="Scripts\MTrE_DbCombo.js" />
+    <Content Include="Scripts\MTrE_History.js" />
+    <Content Include="Scripts\MTrE_Hover.js" />
+    <Content Include="Scripts\MTrE_Link.js" />
+    <Content Include="Scripts\MTrE_Menu.js" />
+    <Content Include="Scripts\MTrE_PDFViewer.js" />
+    <Content Include="Scripts\MTrE_RichTextBox.js" />
+    <Content Include="Scripts\MTrE_Tree.js" />
+    <Content Include="Timeout.aspx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.config.Forms" />
+    <Content Include="Web.config.Windows" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\Theme1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58492</DevelopmentServerPort>
+          <DevelopmentServerVPath>/MCCMExagoReports/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ScreenDesign</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
